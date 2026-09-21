@@ -7,31 +7,68 @@ using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
 
 public class TouchInputHandler : MonoBehaviour
 {
-    public static event Action<Vector2> OnTouchedScreen;
+    public static event Action<Vector2> OnTouchBegan;
+    public static event Action<Vector2> OnTouchMoved;
+    public static event Action<Vector2> OnTouchEnded;
 
-    // Enhanced touch support is enabled when the menu is active.
     void OnEnable() => EnhancedTouchSupport.Enable();
     void OnDisable() => EnhancedTouchSupport.Disable();
 
-    void Update()
+    private void Update()
     {
-        // Set the touch position and invoke the event in the editor
 #if UNITY_EDITOR
+
+        CheckMouseInput();
+#else
+
+        CheckTouchInput();
+#endif
+    }
+
+#if UNITY_EDITOR
+    private void CheckMouseInput()
+    {
+        if (Mouse.current == null) return;
+
+        Vector2 mousePosition = Mouse.current.position.ReadValue();
+
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            var mousePosition = Mouse.current.position.ReadValue();
-            OnTouchedScreen?.Invoke(mousePosition);
+            Debug.Log("Input Began");
+            OnTouchBegan?.Invoke(mousePosition);
         }
-        // Set the touch position and invoke the event on the mobile device
+
+        if (Mouse.current.leftButton.isPressed)
+        {
+            OnTouchMoved?.Invoke(mousePosition);
+        }
+
+        if (Mouse.current.leftButton.wasReleasedThisFrame)
+        {
+            Debug.Log("Input Ended");
+            OnTouchEnded?.Invoke(mousePosition);
+        }
+    }
 #else
-        if (Touch.activeTouches.Count == 0) return;
+    private void CheckTouchInput()
+    {
+        if (Touch.activeTouches.Count == 0)
+            return;
 
         Touch touch = Touch.activeTouches[0];
 
-        if (touch.phase == UnityEngine.InputSystem.TouchPhase.Began)
+        switch (touch.phase)
         {
-            OnTouchedScreen?.Invoke(touch.screenPosition);
+            case UnityEngine.InputSystem.TouchPhase.Began:
+                OnTouchBegan?.Invoke(touch.screenPosition);
+                break;
+            case UnityEngine.InputSystem.TouchPhase.Moved:
+                OnTouchMoved?.Invoke(touch.screenPosition);
+                break;
+            case UnityEngine.InputSystem.TouchPhase.Ended:
+                OnTouchEnded?.Invoke(touch.screenPosition);
+                break;
         }
-#endif
     }
+#endif
 }

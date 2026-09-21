@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TouchRaycastHandler
   arCamera: {fileID: 2512387468973847745}
-  _creatureHatchingOptions:
+  creatureHatchingOptions:
   - {fileID: 11400000, guid: 0998cc2ccb6ee4c04a65e2553b7d0d97, type: 2}
   - {fileID: 11400000, guid: efd8ac62bd71842a49f8ac02f9b06da5, type: 2}
   - {fileID: 11400000, guid: 3088d33df66fd425497582064cf78e59, type: 2}
