@@ -13,17 +13,12 @@ public class CaptureHandler : MonoBehaviour
     private bool _hasBeenCaught;
     private bool _missedCreature;
     private CreatureHandler _creature;
-    private float _timeToDelete = 3.0f;
+    private readonly float _timeToDelete = 3.0f;
     private float _deleteTimer;
 
     void OnBecameInvisible()
     {
         MissedCreature();
-    }
-
-    void OnDestroy()
-    {
-        _missedCreature = false;
     }
 
     void Update()
@@ -35,7 +30,6 @@ public class CaptureHandler : MonoBehaviour
         {
             MissedCreature();
         }
-
     }
 
     void OnCollisionEnter(Collision collision)

@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 [InitializeOnLoad]
 public static class PlayFromBeginningTool
 {
-    private const string START_SCENE_PATH = "Assets/PokemonGoClone/Scenes/MainMenu.unity";
+    private const string START_SCENE_PATH = "Assets/CreatureCatcherProject/Scenes/MainMenu.unity";
 
     private const string PREVIOUS_SCENE_KEY = "PlayFromBeginning_PreviousScene";
 
@@ -19,7 +19,7 @@ public static class PlayFromBeginningTool
         EditorApplication.playModeStateChanged += OnPlayModeChanged;
     }
 
-    [MenuItem("Tools/Play From Beginning %#p")]
+    [MenuItem("Tools/Play From Beginning #b")]
     public static void PlayFromBeginning()
     {
         // Don't do anything if we're already playing
