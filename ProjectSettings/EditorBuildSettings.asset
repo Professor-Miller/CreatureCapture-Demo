@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/PokemonGoClone/Scenes/MainMenu.unity
-    guid: 2bfff6e426ea2407d84cbefadd820c98
+    path: Assets/CreatureCatcherProject/Scenes/MainMenu.unity
+    guid: 8ba3f51e34e07d0499a93cb2cdb428c5
   - enabled: 1
-    path: Assets/PokemonGoClone/Scenes/Game.unity
-    guid: 3bc08f5b4123f4cbcb6826ac45b245a5
+    path: Assets/CreatureCatcherProject/Scenes/Game.unity
+    guid: 152236e258640f24ab5f8c93875e0429
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 0465d33c6aee55f44b0237db8b0e0259, type: 2}

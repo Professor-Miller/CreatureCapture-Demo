@@ -1,0 +1,1 @@
+/Volumes/ToastedInk/UCCS/Unity/CreatureCapture-Demo/Library/Bee/artifacts/Android/il2cppOutput/cpp
