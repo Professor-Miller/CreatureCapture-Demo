@@ -7,6 +7,9 @@ public class CaptureHandler : MonoBehaviour
 {
     [SerializeField] private Rigidbody rigidbody;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip hitClip;
+
     public static event Action<CreatureDataSO> OnCreatureCaught;
     public static event Action OnMissedCreature;
 
@@ -15,6 +18,12 @@ public class CaptureHandler : MonoBehaviour
     private CreatureHandler _creature;
     private readonly float _timeToDelete = 3.0f;
     private float _deleteTimer;
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     void OnBecameInvisible()
     {
@@ -34,6 +43,8 @@ public class CaptureHandler : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        audioSource.PlayOneShot(hitClip);
+
         if (collision.gameObject.CompareTag("Ground"))
         {
             _missedCreature = true;
@@ -68,6 +79,9 @@ public class CaptureHandler : MonoBehaviour
 
     private IEnumerator MoveBallToTarget(Transform ball, Transform target, float duration)
     {
+        audioSource.Play();
+        HapticFeedback.Vibrate();
+
         Vector3 startPosition = ball.position;
         float elapsed = 0f;
         var groundPosition = target.position + new Vector3(0, 0.1f, 0);

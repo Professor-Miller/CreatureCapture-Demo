@@ -22,20 +22,20 @@ extern void CaptureHandler_add_OnCreatureCaught_mE506EA95972EAB17D79DC559369A141
 extern void CaptureHandler_remove_OnCreatureCaught_m02E1C4F3ACDA63D8D952446FB82E29B3CFBC1B22 (void);
 extern void CaptureHandler_add_OnMissedCreature_m2C2AC73216AFAE2393DBDA4E855F8DB52833B096 (void);
 extern void CaptureHandler_remove_OnMissedCreature_mBE14943484CE622250F8C104C5D70F016D7BBD27 (void);
+extern void CaptureHandler_Start_mC1B8C435EF06928FCE8E459FFBD24FA8D19BFAB5 (void);
 extern void CaptureHandler_OnBecameInvisible_m7767F07C9E853CFE100DEC2DAA0BF7CAA330D90A (void);
-extern void CaptureHandler_OnDestroy_mA82BA75F66455BDEC9C2DBE4248272BE00394DA5 (void);
 extern void CaptureHandler_Update_m78534D31E6FBE8B48D055DA0870717F7C57151CA (void);
 extern void CaptureHandler_OnCollisionEnter_m85CE41BE0D36E452B0702870D8CD435F169951CB (void);
 extern void CaptureHandler_OnTriggerEnter_m2CB6474D4662D61C19D7B697123878C57032C7E1 (void);
 extern void CaptureHandler_MoveBallToTarget_m05C54B663F07457B7E47081B85F31EE786DC94BE (void);
 extern void CaptureHandler_MissedCreature_m9D83E7FFE3F868271100F579E55919F0005335A8 (void);
 extern void CaptureHandler__ctor_mFC72346FEBDDFE267FCA0E5629A0A8FA7B8639E0 (void);
-extern void U3CMoveBallToTargetU3Ed__17__ctor_m9D7BD710A90C03F58EAB64621762276C7FF5474A (void);
-extern void U3CMoveBallToTargetU3Ed__17_System_IDisposable_Dispose_m34BA610E11351DD0EA7B845823CAA54AD3A59653 (void);
-extern void U3CMoveBallToTargetU3Ed__17_MoveNext_m9385695F902B35B13855461E3DC9C6C5CDB63477 (void);
-extern void U3CMoveBallToTargetU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m30166F8E8A361DCBE60E7801C6FFC6339A55D0BF (void);
-extern void U3CMoveBallToTargetU3Ed__17_System_Collections_IEnumerator_Reset_mFB3F8CEFCE144BF5B87958CD5E15513F6FB20322 (void);
-extern void U3CMoveBallToTargetU3Ed__17_System_Collections_IEnumerator_get_Current_m6EB80B7B3674FB206CA3295191DC86182CB2D44B (void);
+extern void U3CMoveBallToTargetU3Ed__19__ctor_mCE142167318CBEC417BCA94571E51162F2AB5E35 (void);
+extern void U3CMoveBallToTargetU3Ed__19_System_IDisposable_Dispose_m78EB1FCF53BF08ED64FD66317E8B5A51F79E34E8 (void);
+extern void U3CMoveBallToTargetU3Ed__19_MoveNext_mC7A33881A57DDA92700049D1F879B70E08A41F7E (void);
+extern void U3CMoveBallToTargetU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m32C3D7FC5645E87085E38427F77E2BA6AA042184 (void);
+extern void U3CMoveBallToTargetU3Ed__19_System_Collections_IEnumerator_Reset_mE558F806EE87F8C0ABF6027863C0D878025EB6F0 (void);
+extern void U3CMoveBallToTargetU3Ed__19_System_Collections_IEnumerator_get_Current_m1A4B281B957BF6F833AF02813A00B3A194DE5387 (void);
 extern void CreatureDataSO__ctor_m20C341259164DB9712F41F2C2B2CBBBE57A4DC4C (void);
 extern void CreatureHandler_get_CreatureData_m789F8BAFD690B8FB5D22BAA737231E699A616182 (void);
 extern void CreatureHandler_set_CreatureData_mFB8F01E217FC07C354FE0255DBE55C44B63963A6 (void);
@@ -56,6 +56,8 @@ extern void GameCanvasHandler_DisplaySpawnButton_m223076E59A4D00852F2BCDFE33AEC1
 extern void GameCanvasHandler_DisplayGameReloadButton_mDC6727687E51A3D1B5BAAD0658347BB8D1F760DC (void);
 extern void GameCanvasHandler_DisplayCaught_mD60B4036CE1BA0AB0A5D2E99E741E55079456FCB (void);
 extern void GameCanvasHandler__ctor_mF734E058DCEB684ED8DBE99BD0E696C279DDE01A (void);
+extern void HapticFeedback_Vibrate_mE3411E304EFBF75451004DD7442F355493828ED2 (void);
+extern void HapticFeedback__ctor_m4DF93C2064581952C933A4D8573490FED606E9C2 (void);
 extern void MainMenuHandler_OnEnable_mE8690089B72EC6056BE561AA4E72E59D6006A571 (void);
 extern void MainMenuHandler_OnDisable_m018C4548E6E6425505012B76308A92E9EF0FBF18 (void);
 extern void MainMenuHandler_Update_m8EA88BFCAA83742B200913A3D1BA7C97086A336F (void);
@@ -177,7 +179,7 @@ extern void U3CWaitUntilNextCardU3Ed__36_MoveNext_mEB6BA70FAED1CFCFF4A723EA3EAB8
 extern void U3CWaitUntilNextCardU3Ed__36_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDB2315FB1F67F06B37604285AD8F003E282D1607 (void);
 extern void U3CWaitUntilNextCardU3Ed__36_System_Collections_IEnumerator_Reset_m5E5CC9DFDC8C17DB423A7C7ECBCD4342A7754633 (void);
 extern void U3CWaitUntilNextCardU3Ed__36_System_Collections_IEnumerator_get_Current_mE7D77BA338B271D9E95117683B19436CFFF37229 (void);
-static Il2CppMethodPointer s_methodPointers[170] = 
+static Il2CppMethodPointer s_methodPointers[172] = 
 {
 	BallFlickHandler_OnEnable_mD54A263248DDD1CC17CF1B373BD510F4DF0C3641,
 	BallFlickHandler_OnDisable_mCC79AC013F786AE00D818C5659879034AD451BB9,
@@ -194,20 +196,20 @@ static Il2CppMethodPointer s_methodPointers[170] =
 	CaptureHandler_remove_OnCreatureCaught_m02E1C4F3ACDA63D8D952446FB82E29B3CFBC1B22,
 	CaptureHandler_add_OnMissedCreature_m2C2AC73216AFAE2393DBDA4E855F8DB52833B096,
 	CaptureHandler_remove_OnMissedCreature_mBE14943484CE622250F8C104C5D70F016D7BBD27,
+	CaptureHandler_Start_mC1B8C435EF06928FCE8E459FFBD24FA8D19BFAB5,
 	CaptureHandler_OnBecameInvisible_m7767F07C9E853CFE100DEC2DAA0BF7CAA330D90A,
-	CaptureHandler_OnDestroy_mA82BA75F66455BDEC9C2DBE4248272BE00394DA5,
 	CaptureHandler_Update_m78534D31E6FBE8B48D055DA0870717F7C57151CA,
 	CaptureHandler_OnCollisionEnter_m85CE41BE0D36E452B0702870D8CD435F169951CB,
 	CaptureHandler_OnTriggerEnter_m2CB6474D4662D61C19D7B697123878C57032C7E1,
 	CaptureHandler_MoveBallToTarget_m05C54B663F07457B7E47081B85F31EE786DC94BE,
 	CaptureHandler_MissedCreature_m9D83E7FFE3F868271100F579E55919F0005335A8,
 	CaptureHandler__ctor_mFC72346FEBDDFE267FCA0E5629A0A8FA7B8639E0,
-	U3CMoveBallToTargetU3Ed__17__ctor_m9D7BD710A90C03F58EAB64621762276C7FF5474A,
-	U3CMoveBallToTargetU3Ed__17_System_IDisposable_Dispose_m34BA610E11351DD0EA7B845823CAA54AD3A59653,
-	U3CMoveBallToTargetU3Ed__17_MoveNext_m9385695F902B35B13855461E3DC9C6C5CDB63477,
-	U3CMoveBallToTargetU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m30166F8E8A361DCBE60E7801C6FFC6339A55D0BF,
-	U3CMoveBallToTargetU3Ed__17_System_Collections_IEnumerator_Reset_mFB3F8CEFCE144BF5B87958CD5E15513F6FB20322,
-	U3CMoveBallToTargetU3Ed__17_System_Collections_IEnumerator_get_Current_m6EB80B7B3674FB206CA3295191DC86182CB2D44B,
+	U3CMoveBallToTargetU3Ed__19__ctor_mCE142167318CBEC417BCA94571E51162F2AB5E35,
+	U3CMoveBallToTargetU3Ed__19_System_IDisposable_Dispose_m78EB1FCF53BF08ED64FD66317E8B5A51F79E34E8,
+	U3CMoveBallToTargetU3Ed__19_MoveNext_mC7A33881A57DDA92700049D1F879B70E08A41F7E,
+	U3CMoveBallToTargetU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m32C3D7FC5645E87085E38427F77E2BA6AA042184,
+	U3CMoveBallToTargetU3Ed__19_System_Collections_IEnumerator_Reset_mE558F806EE87F8C0ABF6027863C0D878025EB6F0,
+	U3CMoveBallToTargetU3Ed__19_System_Collections_IEnumerator_get_Current_m1A4B281B957BF6F833AF02813A00B3A194DE5387,
 	CreatureDataSO__ctor_m20C341259164DB9712F41F2C2B2CBBBE57A4DC4C,
 	CreatureHandler_get_CreatureData_m789F8BAFD690B8FB5D22BAA737231E699A616182,
 	CreatureHandler_set_CreatureData_mFB8F01E217FC07C354FE0255DBE55C44B63963A6,
@@ -228,6 +230,8 @@ static Il2CppMethodPointer s_methodPointers[170] =
 	GameCanvasHandler_DisplayGameReloadButton_mDC6727687E51A3D1B5BAAD0658347BB8D1F760DC,
 	GameCanvasHandler_DisplayCaught_mD60B4036CE1BA0AB0A5D2E99E741E55079456FCB,
 	GameCanvasHandler__ctor_mF734E058DCEB684ED8DBE99BD0E696C279DDE01A,
+	HapticFeedback_Vibrate_mE3411E304EFBF75451004DD7442F355493828ED2,
+	HapticFeedback__ctor_m4DF93C2064581952C933A4D8573490FED606E9C2,
 	MainMenuHandler_OnEnable_mE8690089B72EC6056BE561AA4E72E59D6006A571,
 	MainMenuHandler_OnDisable_m018C4548E6E6425505012B76308A92E9EF0FBF18,
 	MainMenuHandler_Update_m8EA88BFCAA83742B200913A3D1BA7C97086A336F,
@@ -353,9 +357,9 @@ static Il2CppMethodPointer s_methodPointers[170] =
 extern void Goal__ctor_m4452076EE88E564D97BBDD12E7011CAF34E275A3_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[1] = 
 {
-	{ 0x0600008F, Goal__ctor_m4452076EE88E564D97BBDD12E7011CAF34E275A3_AdjustorThunk },
+	{ 0x06000091, Goal__ctor_m4452076EE88E564D97BBDD12E7011CAF34E275A3_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[170] = 
+static const int32_t s_InvokerIndices[172] = 
 {
 	12045,
 	12045,
@@ -368,10 +372,10 @@ static const int32_t s_InvokerIndices[170] =
 	12045,
 	12045,
 	12045,
-	17797,
-	17797,
-	17797,
-	17797,
+	17798,
+	17798,
+	17798,
+	17798,
 	12045,
 	12045,
 	12045,
@@ -389,8 +393,8 @@ static const int32_t s_InvokerIndices[170] =
 	12045,
 	11549,
 	8845,
-	17797,
-	17797,
+	17798,
+	17798,
 	8845,
 	8845,
 	8845,
@@ -405,6 +409,8 @@ static const int32_t s_InvokerIndices[170] =
 	12045,
 	12045,
 	8845,
+	12045,
+	18268,
 	12045,
 	12045,
 	12045,
@@ -421,12 +427,12 @@ static const int32_t s_InvokerIndices[170] =
 	8845,
 	12045,
 	12045,
-	17797,
-	17797,
-	17797,
-	17797,
-	17797,
-	17797,
+	17798,
+	17798,
+	17798,
+	17798,
+	17798,
+	17798,
 	12045,
 	12045,
 	12045,
@@ -441,7 +447,7 @@ static const int32_t s_InvokerIndices[170] =
 	12045,
 	11549,
 	12045,
-	18267,
+	18268,
 	11549,
 	8845,
 	11932,
@@ -532,7 +538,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	170,
+	172,
 	s_methodPointers,
 	1,
 	s_adjustorThunks,

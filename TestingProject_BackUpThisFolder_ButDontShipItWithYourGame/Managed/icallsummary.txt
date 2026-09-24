@@ -343,6 +343,7 @@ UnityEngine.AudioClip::get_frequency_Injected
 UnityEngine.AudioClip::get_samples_Injected
 UnityEngine.AudioSettings::StartAudioOutput
 UnityEngine.AudioSettings::StopAudioOutput
+UnityEngine.AudioSource::PlayHelper_Injected
 UnityEngine.AudioSource::PlayOneShotHelper_Injected
 UnityEngine.AudioSource::set_loop_Injected
 UnityEngine.AudioSource::set_playOnAwake_Injected
@@ -789,6 +790,7 @@ UnityEngine.GUIUtility::get_systemCopyBuffer_Injected
 UnityEngine.GUIUtility::set_imeCompositionMode
 UnityEngine.GUIUtility::set_pixelsPerPoint
 UnityEngine.GUIUtility::set_systemCopyBuffer_Injected
+UnityEngine.Handheld::Vibrate
 UnityEngine.Hash128::ComputeFromPtr
 UnityEngine.Hash128::Hash128ToStringImpl_Injected
 UnityEngine.HDROutputSettings::GetActive

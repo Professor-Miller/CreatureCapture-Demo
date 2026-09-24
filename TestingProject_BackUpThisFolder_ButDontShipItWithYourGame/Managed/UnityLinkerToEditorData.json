@@ -65,7 +65,9 @@
           },
           {
             "name": "AudioClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/CreatureCatcherProject/Scenes/Game.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -86,13 +88,17 @@
           },
           {
             "name": "AudioResource",
-            "scenes": [],
-            "dependencyType": 1,
+            "scenes": [
+              "Assets/CreatureCatcherProject/Scenes/Game.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AudioSource",
-            "scenes": [],
+            "scenes": [
+              "Assets/CreatureCatcherProject/Scenes/Game.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
